@@ -89,7 +89,7 @@ model = joblib.load('model_joblib_heart.pkl')
 if st.button("Predict"):    
     result=model.predict(input_df)
     if result == 0:
-            st.write("no attack")
+            st.subheader("PERSON IS OUT OF DANGER.")
     else:
-            st.write("yes heart attack")
+            st.write("YES IT SEEMS TO BE A HEART DISEASE")
         
