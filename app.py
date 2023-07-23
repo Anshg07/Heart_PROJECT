@@ -5,6 +5,7 @@ import pickle
 import joblib
 
 st.set_page_config('wide')
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.write("""
 # Heart disease Prediction App
@@ -14,8 +15,6 @@ This app predicts If a patient has a heart disease
 """)
 
 st.sidebar.header('User Input Features')
-
-
 
 # Collects user input features into dataframe
 
